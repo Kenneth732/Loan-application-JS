@@ -37,3 +37,8 @@ loanForm.addEventListener('submit', function (event) {
     updateSummary();
     loanForm.reset();
 });
+
+function updateSummary() {
+    summaryList.innerHTML = '';
+
+}
