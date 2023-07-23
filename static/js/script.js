@@ -4,3 +4,8 @@ const summary = document.getElementById('summary');
 const summaryList = document.getElementById('summaryList');
 
 const applications = [];
+
+loanForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+});
