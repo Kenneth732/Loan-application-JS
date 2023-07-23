@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Application</h1>
+        <form id="loanForm">
+            <!-- Loan Application Form Fields -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="number" id="loanAmount" required>
+
+            <label for="employmentStatus">Employment Status:</label>
+            <select id="employmentStatus" required>
+                <option value="" disabled selected>Select Employment Status</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <!-- Loan Application Result -->
+        <p id="result"></p>
+
+        <!-- Loan Application Summary -->
+        <div id="summary">
+            <h2>Loan Application Summary</h2>
+            <ul id="summaryList"></ul>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
