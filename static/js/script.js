@@ -8,4 +8,10 @@ const applications = [];
 loanForm.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    const fullName = document.getElementById('fullName').value;
+    const loanAmount = parseInt(document.getElementById('loanAmount').value);
+    const employmentStatus = document.getElementById('employmentStatus').value;
+    const income = parseInt(document.getElementById('income').value);
+
+
 });
