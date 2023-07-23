@@ -23,6 +23,15 @@ loanForm.addEventListener('submit', function (event) {
             income,
             status: 'Approved'
         });
-    } 
+    } else {
+        result.textContent = 'Sorry, your loan application is not approved at this time.';
+        applications.push({
+            fullName,
+            loanAmount,
+            employmentStatus,
+            income,
+            status: 'Rejected'
+        });
+    }
 
 });
