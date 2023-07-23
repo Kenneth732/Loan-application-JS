@@ -34,4 +34,6 @@ loanForm.addEventListener('submit', function (event) {
         });
     }
 
+    updateSummary();
+    loanForm.reset();
 });
