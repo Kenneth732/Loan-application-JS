@@ -25,3 +25,24 @@ form {
 label {
     margin-top: 10px;
 }
+
+input,
+select,
+button {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0074d9;
+    color: #fff;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+}
