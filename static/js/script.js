@@ -13,5 +13,16 @@ loanForm.addEventListener('submit', function (event) {
     const employmentStatus = document.getElementById('employmentStatus').value;
     const income = parseInt(document.getElementById('income').value);
 
+    // Simple eligibility check
+    if (loanAmount > 0 && income >= 1000) {
+        result.textContent = `Congratulations, ${fullName}! Your loan application is approved.`;
+        applications.push({
+            fullName,
+            loanAmount,
+            employmentStatus,
+            income,
+            status: 'Approved'
+        });
+    } 
 
 });
