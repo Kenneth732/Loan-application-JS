@@ -40,5 +40,14 @@ loanForm.addEventListener('submit', function (event) {
 
 function updateSummary() {
     summaryList.innerHTML = '';
-
+    applications.forEach((application, index) => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <strong>Application ${index + 1}:</strong>
+            Name: ${application.fullName} | 
+            Loan Amount: $${application.loanAmount} | 
+            Status: ${application.status}
+        `;
+        summaryList.appendChild(listItem);
+    });
 }
